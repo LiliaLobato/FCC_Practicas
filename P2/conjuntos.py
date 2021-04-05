@@ -13,7 +13,6 @@ def DIFF_func(A,B):
 	return D
 
 def DIFF_SIM_func(A,B):
-	print("A Δ B:" ,A," Δ ", B)
 	DS = list(list(set(A)-set(B)) + list(set(B)-set(A)))
 	return DS
 ####################
@@ -37,17 +36,17 @@ print("###########################")
 #obtenemos los conjuntos A, B y C
 arr = input("\nConjunto A: ")   #A
 if(len(arr) != 0):
-	A = list(map(int,arr.split(','))) #quitamos las comas y guardamos en un arreglo
+	A = list(map(str,arr.split(','))) #quitamos las comas y guardamos en un arreglo
 
 arr = input("\nConjunto B: ")   #B
 if(len(arr) != 0):
-	B = list(map(int,arr.split(','))) #quitamos las comas y guardamos en un arreglo
+	B = list(map(str,arr.split(','))) #quitamos las comas y guardamos en un arreglo
 
 arr = input("\nConjunto C: ")   #C
 if(len(arr) != 0):
-	C = list(map(int,arr.split(','))) #quitamos las comas y guardamos en un arreglo
+	C = list(map(str,arr.split(','))) #quitamos las comas y guardamos en un arreglo
 
-print("\n############### CONUNTOS ###############")
+print("\n############### CONJUNTOS ###############")
 print("A: ",A)
 print("B: ",B) 
 print("C: ",C)
@@ -145,21 +144,45 @@ while not salir:
 		print ("6. C Δ B")
 		sub_opcion = int(input("Introduce los conjuntos a operar: "))
 		if sub_opcion == 1:
+			print("A - B:" ,A," - ", B)
+			print(DIFF_func(A,B))
+			print("B - A:" ,B," - ", A)
+			print(DIFF_func(B,A))
 			print("A Δ B:" ,A," Δ ", B)
 			print(DIFF_SIM_func(A,B))
 		elif sub_opcion == 2:
+			print("A - C:" ,A," - ", C)
+			print(DIFF_func(A,C))
+			print("C - A:" ,C," - ", A)
+			print(DIFF_func(C,A))
 			print("A Δ C:" ,A," Δ ", C)
 			print(DIFF_SIM_func(A,C))
 		if sub_opcion == 1:
+			print("B - A:" ,B," - ", A)
+			print(DIFF_func(B,A))
+			print("A - B:" ,A," - ", B)
+			print(DIFF_func(A,B))
 			print("B Δ A:" ,B," Δ ", A)
 			print(DIFF_SIM_func(B,A))
 		elif sub_opcion == 2:
+			print("B - C:" ,B," - ", C)
+			print(DIFF_func(B,C))
+			print("C - B:" ,C," - ", B)
+			print(DIFF_func(C,B))
 			print("B Δ C:" ,B," Δ ", C)
 			print(DIFF_SIM_func(B,C))
 		elif sub_opcion == 2:
+			print("C - A:" ,C," - ", A)
+			print(DIFF_func(C,A))
+			print("A - C:" ,A," - ", C)
+			print(DIFF_func(A,C))
 			print("C Δ A:" ,C," Δ ", A)
 			print(DIFF_SIM_func(C,A))
 		else :
+			print("C - B:" ,C," - ", B)
+			print(DIFF_func(C,B))
+			print("B - C:" ,B," - ", C)
+			print(DIFF_func(B,C))
 			print("C Δ B:" ,C," Δ ", B)
 			print(DIFF_SIM_func(C,B))
 
