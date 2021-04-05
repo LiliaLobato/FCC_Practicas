@@ -121,7 +121,7 @@ while not salir:
 		elif sub_opcion == 2:
 			print("A - C:" ,A," - ", C)
 			print(DIFF_func(A,C))
-		if sub_opcion == 3:
+		elif sub_opcion == 3:
 			print("B - A:" ,B," - ", A)
 			print(DIFF_func(B,A))
 		elif sub_opcion == 4:
@@ -157,7 +157,7 @@ while not salir:
 			print(DIFF_func(C,A))
 			print("A Δ C:" ,A," Δ ", C)
 			print(DIFF_SIM_func(A,C))
-		if sub_opcion == 1:
+		elif sub_opcion == 1:
 			print("B - A:" ,B," - ", A)
 			print(DIFF_func(B,A))
 			print("A - B:" ,A," - ", B)
