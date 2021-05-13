@@ -69,7 +69,7 @@ else:
 	print("########### NO ES SIMETRICO ##############")
 	
 
-########## REVISAR SI ES SIMETRICO
+########## REVISAR SI ES TRANSITIVO
 
 isTransitivo = True
 
