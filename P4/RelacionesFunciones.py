@@ -135,15 +135,19 @@ print ("CODOMINIO: ", codominio)
 
 ########## ES FUNCIÓN?
 isFuncion = True;
-for i in range (transiciones-1):
-	for j in range (0, len(Relacion)-1):
-		if (i != j) and (Relacion[i] == Relacion[j]):
-			isFuncion = True
-		else:
-			if len(Relacion[i]) == 1 or len(Relacion[i+1]) == 1:
-				isFuncion = False
-			if Relacion[i][0] == Relacion[i+1][0]:
-				isFuncion = False
+for i in range (0, len(Relacion)-1):
+    for j in range (0, len(Relacion)-1):
+        if (i != j) and (Relacion[i] == Relacion[j]):
+            isFuncion = True
+        else:
+            for k in range (0, len(Relacion)):
+                if (k != i):
+                    if len(Relacion[i]) == 1 or len(Relacion[k]) == 1:
+                         isFuncion = False
+                    elif (Relacion[i][0] == Relacion[k][0]) and (Relacion[i][1] == Relacion[k][1]):
+                        isFuncion = True
+                    elif Relacion[i][0] == Relacion[k][0]:
+                        isFuncion = False
 
 if isFuncion == True:
 	print("############ ES FUNCIÓN ###############")

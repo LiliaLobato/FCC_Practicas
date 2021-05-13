@@ -940,13 +940,13 @@
    'c:\\users\\lilia '
    'lobato\\appdata\\local\\programs\\python\\python39-32\\lib\\tracemalloc.py',
    'PYMODULE'),
-  ('_py_abc',
-   'c:\\users\\lilia '
-   'lobato\\appdata\\local\\programs\\python\\python39-32\\lib\\_py_abc.py',
-   'PYMODULE'),
   ('stringprep',
    'c:\\users\\lilia '
    'lobato\\appdata\\local\\programs\\python\\python39-32\\lib\\stringprep.py',
+   'PYMODULE'),
+  ('_py_abc',
+   'c:\\users\\lilia '
+   'lobato\\appdata\\local\\programs\\python\\python39-32\\lib\\_py_abc.py',
    'PYMODULE'),
   ('RelacionesFunciones',
    'C:\\Users\\Lilia Lobato\\Desktop\\DOCUMENTOS\\ITESO\\Primavera '

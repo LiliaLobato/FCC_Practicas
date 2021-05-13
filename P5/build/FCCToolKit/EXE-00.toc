@@ -136,7 +136,7 @@
  [],
  False,
  False,
- 1620887455,
+ 1620893304,
  [('run.exe',
    'c:\\users\\lilia '
    'lobato\\appdata\\local\\programs\\python\\python39-32\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-32bit\\run.exe',
